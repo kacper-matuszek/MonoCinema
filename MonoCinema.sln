@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7B2BA5BD-8C81-45DD-97EC-29AB65543C23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{D5D6F917-8575-47E9-ADF3-93115EAFD081}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoCinema.Host", "src\Host\MonoCinema.Host\MonoCinema.Host.csproj", "{FE308FA0-00C1-4AE9-9102-12D125C8B830}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{66DAC64F-26C3-4367-9893-D0CC2CCB6E2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE308FA0-00C1-4AE9-9102-12D125C8B830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE308FA0-00C1-4AE9-9102-12D125C8B830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE308FA0-00C1-4AE9-9102-12D125C8B830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE308FA0-00C1-4AE9-9102-12D125C8B830}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D5D6F917-8575-47E9-ADF3-93115EAFD081} = {7B2BA5BD-8C81-45DD-97EC-29AB65543C23}
+		{FE308FA0-00C1-4AE9-9102-12D125C8B830} = {D5D6F917-8575-47E9-ADF3-93115EAFD081}
+		{66DAC64F-26C3-4367-9893-D0CC2CCB6E2D} = {7B2BA5BD-8C81-45DD-97EC-29AB65543C23}
+		{DA6DE2C5-6590-4BB5-81D3-1CED63A44A11} = {7B2BA5BD-8C81-45DD-97EC-29AB65543C23}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56107632-50BB-4B99-AD45-0C93880460B4}
+	EndGlobalSection
+EndGlobal
