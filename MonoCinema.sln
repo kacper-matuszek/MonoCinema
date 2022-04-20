@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{66DA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoCinema.Application", "src\BuildingBlocks\MonoCinema.Application\MonoCinema.Application.csproj", "{BF73658F-6A15-4A60-BCE9-DB56DEF36ABE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{FE308FA0-00C1-4AE9-9102-12D125C8B830}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE308FA0-00C1-4AE9-9102-12D125C8B830}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE308FA0-00C1-4AE9-9102-12D125C8B830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF73658F-6A15-4A60-BCE9-DB56DEF36ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF73658F-6A15-4A60-BCE9-DB56DEF36ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF73658F-6A15-4A60-BCE9-DB56DEF36ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF73658F-6A15-4A60-BCE9-DB56DEF36ABE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 		{FE308FA0-00C1-4AE9-9102-12D125C8B830} = {D5D6F917-8575-47E9-ADF3-93115EAFD081}
 		{66DAC64F-26C3-4367-9893-D0CC2CCB6E2D} = {7B2BA5BD-8C81-45DD-97EC-29AB65543C23}
 		{DA6DE2C5-6590-4BB5-81D3-1CED63A44A11} = {7B2BA5BD-8C81-45DD-97EC-29AB65543C23}
+		{BF73658F-6A15-4A60-BCE9-DB56DEF36ABE} = {DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56107632-50BB-4B99-AD45-0C93880460B4}
