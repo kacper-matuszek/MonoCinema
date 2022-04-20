@@ -21,10 +21,8 @@ internal static class ServiceCollectionExtensions
     {
         var commandType = typeof(ICommand);
         var commandHandlerType = typeof(ICommandHandler<>);
-        var commandTypes = GetTypes(assemblies, commandType);
         var commandHandlerTypes = GetGenericTypes(assemblies, commandHandlerType);
 
-        RegisterGenericTypes(services, commandType, commandTypes);
         RegisterGenericTypes(services, commandHandlerType, commandHandlerTypes);
         services.AddSingleton<ICommandDispatcher, CommandDispatcher>();
 
@@ -35,10 +33,8 @@ internal static class ServiceCollectionExtensions
     {
         var eventType = typeof(IEvent);
         var eventSubscriberType = typeof(ISubscriber<>);
-        var eventTypes = GetTypes(assemblies, eventType);
         var eventHandlerTypes = GetGenericTypes(assemblies, eventSubscriberType);
 
-        RegisterGenericTypes(services, eventType, eventTypes);
         RegisterGenericTypes(services, eventSubscriberType, eventHandlerTypes);
         services.AddSingleton<IEventDispatcher, EventDispatcher>();
 
@@ -49,10 +45,8 @@ internal static class ServiceCollectionExtensions
     {
         var queryType = typeof(IQuery<>);
         var queryHandlerType = typeof(IQueryHandler<,>);
-        var queryTypes = GetGenericTypes(assemblies, queryType);
         var queryHandlerTypes = GetGenericTypes(assemblies, queryHandlerType);
 
-        RegisterGenericTypes(services, queryType, queryTypes);
         RegisterGenericTypes(services, queryHandlerType, queryHandlerTypes);
         services.AddSingleton<IQueryDispatcher, QueryDispatcher>();
 
