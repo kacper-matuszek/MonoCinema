@@ -19,7 +19,6 @@ internal static class ServiceCollectionExtensions
 
     private static IServiceCollection AddCommands(this IServiceCollection services, Assembly[] assemblies)
     {
-        var commandType = typeof(ICommand);
         var commandHandlerType = typeof(ICommandHandler<>);
         var commandHandlerTypes = GetGenericTypes(assemblies, commandHandlerType);
 
@@ -31,7 +30,6 @@ internal static class ServiceCollectionExtensions
 
     private static IServiceCollection AddEvents(this IServiceCollection services, Assembly[] assemblies)
     {
-        var eventType = typeof(IEvent);
         var eventSubscriberType = typeof(ISubscriber<>);
         var eventHandlerTypes = GetGenericTypes(assemblies, eventSubscriberType);
 
@@ -43,7 +41,6 @@ internal static class ServiceCollectionExtensions
 
     private static IServiceCollection AddQueries(this IServiceCollection services, Assembly[] assemblies)
     {
-        var queryType = typeof(IQuery<>);
         var queryHandlerType = typeof(IQueryHandler<,>);
         var queryHandlerTypes = GetGenericTypes(assemblies, queryHandlerType);
 
