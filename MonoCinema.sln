@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoCinema.Application", "src\BuildingBlocks\MonoCinema.Application\MonoCinema.Application.csproj", "{BF73658F-6A15-4A60-BCE9-DB56DEF36ABE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoCinema.Infrastructure", "src\BuildingBlocks\MonoCinema.Infrastructure\MonoCinema.Infrastructure.csproj", "{7311B942-E2DB-44AD-9F60-D1D386F8D4CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{BF73658F-6A15-4A60-BCE9-DB56DEF36ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF73658F-6A15-4A60-BCE9-DB56DEF36ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF73658F-6A15-4A60-BCE9-DB56DEF36ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7311B942-E2DB-44AD-9F60-D1D386F8D4CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7311B942-E2DB-44AD-9F60-D1D386F8D4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7311B942-E2DB-44AD-9F60-D1D386F8D4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7311B942-E2DB-44AD-9F60-D1D386F8D4CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{66DAC64F-26C3-4367-9893-D0CC2CCB6E2D} = {7B2BA5BD-8C81-45DD-97EC-29AB65543C23}
 		{DA6DE2C5-6590-4BB5-81D3-1CED63A44A11} = {7B2BA5BD-8C81-45DD-97EC-29AB65543C23}
 		{BF73658F-6A15-4A60-BCE9-DB56DEF36ABE} = {DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}
+		{7311B942-E2DB-44AD-9F60-D1D386F8D4CF} = {DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56107632-50BB-4B99-AD45-0C93880460B4}
