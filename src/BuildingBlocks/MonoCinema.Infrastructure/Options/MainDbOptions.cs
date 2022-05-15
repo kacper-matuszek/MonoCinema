@@ -2,6 +2,6 @@
 
 public class MainDbOptions : IMainDbOptions
 {
-    internal const string SectionName = "postgres";
+    internal const string SectionName = "main-database";
     public string ConnectionString { get; set; }
 }
