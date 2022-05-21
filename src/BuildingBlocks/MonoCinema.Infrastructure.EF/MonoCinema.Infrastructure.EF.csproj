@@ -15,7 +15,6 @@
   <ItemGroup>
     <ProjectReference Include="..\MonoCinema.Infrastructure.EF.MsSql\MonoCinema.Infrastructure.EF.MsSql.csproj" />
     <ProjectReference Include="..\MonoCinema.Infrastructure.EF.Postgres\MonoCinema.Infrastructure.EF.Postgres.csproj" />
-    <ProjectReference Include="..\MonoCinema.Infrastructure\MonoCinema.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

@@ -10,4 +10,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
 	  <InternalsVisibleTo Include="MonoCinema.Infrastructure.EF" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MonoCinema.Infrastructure.EF\MonoCinema.Infrastructure.EF.csproj" />
+  </ItemGroup>
 </Project>

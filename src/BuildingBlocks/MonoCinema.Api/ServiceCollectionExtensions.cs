@@ -11,13 +11,13 @@ public static class ServiceCollectionExtensions
     public static IServiceCollection AddFramework(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddApplicationFramework();
-        //services.AddInfrastructureFramework(configuration);
+        services.AddInfrastructureFramework(configuration);
         return services;
     }
 
     public static IApplicationBuilder UseFramework(this IApplicationBuilder builder)
     {
-        //builder.UseInfrastructureFramework();
+        builder.UseInfrastructureFramework();
         return builder;
     }
 }
