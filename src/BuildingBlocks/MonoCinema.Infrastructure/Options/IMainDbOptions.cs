@@ -1,6 +1,7 @@
-﻿namespace MonoCinema.Infrastructure.Options
+﻿namespace MonoCinema.Infrastructure.Options;
+
+public interface IMainDbOptions
 {
-    public interface IMainDbOptions : IDbOptions
-    {
-    }
+    string ConnectionString { get; set; }
+    DatabaseType DatabaseType { get; set; }
 }

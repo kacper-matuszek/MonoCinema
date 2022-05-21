@@ -2,54 +2,35 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using MonoCinema.Infrastructure.EF;
 using MonoCinema.Infrastructure.Options;
+using MonoCinema.Infrastructure.Utils;
 
 namespace MonoCinema.Infrastructure;
 
 public static class ServiceCollectionExtensions
 {
-
     public static IServiceCollection AddInfrastructureFramework(this IServiceCollection services, IConfiguration configuration)
     {
         services.Configure<MainDbOptions>(configuration.GetSection(MainDbOptions.SectionName));
         return services;
     }
 
-    public static IApplicationBuilder UseInfrastructureFramework(this IApplicationBuilder builder) 
-        => builder.UseMainDbAutoMigration();
-
-    public static IServiceCollection AddMainContext<T>(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddMainContext<T>(this IServiceCollection services, IConfiguration configuration, 
+        string migrationAssembly)
         where T : DbContext
     {
         var connectionString = configuration[$"{MainDbOptions.SectionName}:{nameof(MainDbOptions.ConnectionString)}"];
-        services.AddDbContext<T>(x => x.UseNpgsql(connectionString));
-
-        return services;
+        var dbTypeString = configuration[$"{MainDbOptions.SectionName}:{nameof(MainDbOptions.DatabaseType)}"];
+        Enum.TryParse(dbTypeString, out DatabaseType dbType);
+        return services.AddDatabaseContext<T>(migrationAssembly, connectionString, DatabaseTypeUtils.ToEfDatabseType(dbType));
     }
 
-    internal static IApplicationBuilder UseMainDbAutoMigration(this IApplicationBuilder builder)
+    public static IApplicationBuilder UseInfrastructureFramework(this IApplicationBuilder builder)
     {
-        var contextTypes = AppDomain.CurrentDomain.GetAssemblies()
-            .SelectMany(x => x.GetTypes())
-            .Where(x => typeof(DbContext).IsAssignableFrom(x) && !x.IsAbstract && !x.IsInterface && x != typeof(DbContext));
-
         using var scope = builder.ApplicationServices.CreateScope();
-        var logger = scope.ServiceProvider.GetRequiredService<ILogger<DbContext>>();
-        try
-        {
-            foreach(var contextType in contextTypes)
-            {
-                logger.LogInformation("Running migrations for db context: {0}", contextType.Name);
-                var context = scope.ServiceProvider.GetRequiredService(contextType) as DbContext;
-                context.Database.Migrate();
-            }
-        }
-        catch (Exception ex)
-        {
-            logger.LogError(ex, "Error occured during running migrations");
-        }
-
-        return builder;
+        var dbType = scope.ServiceProvider.GetRequiredService<IOptions<MainDbOptions>>().Value;
+        return builder.UseDatabaseAutoMigration(DatabaseTypeUtils.ToEfDatabseType(dbType.DatabaseType));
     }
 }

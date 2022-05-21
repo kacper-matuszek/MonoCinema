@@ -17,7 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoCinema.Application", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoCinema.Infrastructure", "src\BuildingBlocks\MonoCinema.Infrastructure\MonoCinema.Infrastructure.csproj", "{7311B942-E2DB-44AD-9F60-D1D386F8D4CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoCinema.Api", "src\BuildingBlocks\MonoCinema.Api\MonoCinema.Api.csproj", "{6A353E30-D117-4B9D-A76F-EF3DE252FC62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoCinema.Api", "src\BuildingBlocks\MonoCinema.Api\MonoCinema.Api.csproj", "{6A353E30-D117-4B9D-A76F-EF3DE252FC62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoCinema.Infrastructure.EF", "src\BuildingBlocks\MonoCinema.Infrastructure.EF\MonoCinema.Infrastructure.EF.csproj", "{F8E88187-4937-4119-AE6C-72CEF6FC2B8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoCinema.Infrastructure.EF.Postgres", "src\BuildingBlocks\MonoCinema.Infrastructure.EF.Postgres\MonoCinema.Infrastructure.EF.Postgres.csproj", "{C404D4A7-CC01-4D82-8BFF-62B260D395A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoCinema.Infrastructure.EF.MsSql", "src\BuildingBlocks\MonoCinema.Infrastructure.EF.MsSql\MonoCinema.Infrastructure.EF.MsSql.csproj", "{E877B319-DEF1-4979-A741-FF9F4DA68B05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +47,18 @@ Global
 		{6A353E30-D117-4B9D-A76F-EF3DE252FC62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A353E30-D117-4B9D-A76F-EF3DE252FC62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A353E30-D117-4B9D-A76F-EF3DE252FC62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E88187-4937-4119-AE6C-72CEF6FC2B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E88187-4937-4119-AE6C-72CEF6FC2B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E88187-4937-4119-AE6C-72CEF6FC2B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E88187-4937-4119-AE6C-72CEF6FC2B8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C404D4A7-CC01-4D82-8BFF-62B260D395A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C404D4A7-CC01-4D82-8BFF-62B260D395A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C404D4A7-CC01-4D82-8BFF-62B260D395A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C404D4A7-CC01-4D82-8BFF-62B260D395A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E877B319-DEF1-4979-A741-FF9F4DA68B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E877B319-DEF1-4979-A741-FF9F4DA68B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E877B319-DEF1-4979-A741-FF9F4DA68B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E877B319-DEF1-4979-A741-FF9F4DA68B05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +71,9 @@ Global
 		{BF73658F-6A15-4A60-BCE9-DB56DEF36ABE} = {DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}
 		{7311B942-E2DB-44AD-9F60-D1D386F8D4CF} = {DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}
 		{6A353E30-D117-4B9D-A76F-EF3DE252FC62} = {DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}
+		{F8E88187-4937-4119-AE6C-72CEF6FC2B8D} = {DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}
+		{C404D4A7-CC01-4D82-8BFF-62B260D395A3} = {DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}
+		{E877B319-DEF1-4979-A741-FF9F4DA68B05} = {DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56107632-50BB-4B99-AD45-0C93880460B4}
