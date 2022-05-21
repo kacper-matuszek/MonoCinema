@@ -19,11 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoCinema.Infrastructure",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoCinema.Api", "src\BuildingBlocks\MonoCinema.Api\MonoCinema.Api.csproj", "{6A353E30-D117-4B9D-A76F-EF3DE252FC62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoCinema.Infrastructure.EF", "src\BuildingBlocks\MonoCinema.Infrastructure.EF\MonoCinema.Infrastructure.EF.csproj", "{F8E88187-4937-4119-AE6C-72CEF6FC2B8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoCinema.Infrastructure.EF", "src\BuildingBlocks\MonoCinema.Infrastructure.EF\MonoCinema.Infrastructure.EF.csproj", "{F8E88187-4937-4119-AE6C-72CEF6FC2B8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoCinema.Infrastructure.EF.Postgres", "src\BuildingBlocks\MonoCinema.Infrastructure.EF.Postgres\MonoCinema.Infrastructure.EF.Postgres.csproj", "{C404D4A7-CC01-4D82-8BFF-62B260D395A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoCinema.Infrastructure.EF.Postgres", "src\BuildingBlocks\MonoCinema.Infrastructure.EF.Postgres\MonoCinema.Infrastructure.EF.Postgres.csproj", "{C404D4A7-CC01-4D82-8BFF-62B260D395A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoCinema.Infrastructure.EF.MsSql", "src\BuildingBlocks\MonoCinema.Infrastructure.EF.MsSql\MonoCinema.Infrastructure.EF.MsSql.csproj", "{E877B319-DEF1-4979-A741-FF9F4DA68B05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoCinema.Infrastructure.EF.MsSql", "src\BuildingBlocks\MonoCinema.Infrastructure.EF.MsSql\MonoCinema.Infrastructure.EF.MsSql.csproj", "{E877B319-DEF1-4979-A741-FF9F4DA68B05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoCinema.SharedKernel", "src\BuildingBlocks\MonoCinema.SharedKernel\MonoCinema.SharedKernel.csproj", "{B1BF7E69-A0ED-40E3-AF85-856D5B1ADEF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{E877B319-DEF1-4979-A741-FF9F4DA68B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E877B319-DEF1-4979-A741-FF9F4DA68B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E877B319-DEF1-4979-A741-FF9F4DA68B05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1BF7E69-A0ED-40E3-AF85-856D5B1ADEF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1BF7E69-A0ED-40E3-AF85-856D5B1ADEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1BF7E69-A0ED-40E3-AF85-856D5B1ADEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1BF7E69-A0ED-40E3-AF85-856D5B1ADEF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{F8E88187-4937-4119-AE6C-72CEF6FC2B8D} = {DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}
 		{C404D4A7-CC01-4D82-8BFF-62B260D395A3} = {DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}
 		{E877B319-DEF1-4979-A741-FF9F4DA68B05} = {DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}
+		{B1BF7E69-A0ED-40E3-AF85-856D5B1ADEF3} = {DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56107632-50BB-4B99-AD45-0C93880460B4}
