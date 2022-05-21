@@ -10,11 +10,11 @@
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
-	<InternalsVisibleTo Include="MonoCinema.Infrastructure.EF.Postgres" />
-	<InternalsVisibleTo Include="MonoCinema.Infrastructure.EF.MsSql" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MonoCinema.Infrastructure.EF.MsSql\MonoCinema.Infrastructure.EF.MsSql.csproj" />
+    <ProjectReference Include="..\MonoCinema.Infrastructure.EF.Postgres\MonoCinema.Infrastructure.EF.Postgres.csproj" />
     <ProjectReference Include="..\MonoCinema.Infrastructure\MonoCinema.Infrastructure.csproj" />
   </ItemGroup>
 
