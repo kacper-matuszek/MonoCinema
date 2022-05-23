@@ -25,7 +25,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoCinema.Infrastructure.E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoCinema.Infrastructure.EF.MsSql", "src\BuildingBlocks\MonoCinema.Infrastructure.EF.MsSql\MonoCinema.Infrastructure.EF.MsSql.csproj", "{E877B319-DEF1-4979-A741-FF9F4DA68B05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoCinema.SharedKernel", "src\BuildingBlocks\MonoCinema.SharedKernel\MonoCinema.SharedKernel.csproj", "{B1BF7E69-A0ED-40E3-AF85-856D5B1ADEF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonoCinema.SharedKernel", "src\BuildingBlocks\MonoCinema.SharedKernel\MonoCinema.SharedKernel.csproj", "{B1BF7E69-A0ED-40E3-AF85-856D5B1ADEF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users", "Users", "{0D61484B-8C16-470D-937B-3095F8B8AC96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoCinema.Users.Infrastructure", "src\Modules\Users\MonoCinema.Users.Infrastructure\MonoCinema.Users.Infrastructure.csproj", "{AD6A14AE-E470-4028-8FB4-63D24DF80797}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoCinema.Users.Application", "src\Modules\Users\MonoCinema.Users.Application\MonoCinema.Users.Application.csproj", "{928C4580-C389-41EB-9DB0-7946EE54CF0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoCinema.Users.Api", "src\Modules\Users\MonoCinema.Users.Api\MonoCinema.Users.Api.csproj", "{78C21664-DE57-4E48-A9B9-76B34DF97F11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoCinema.Users.Domain", "src\Modules\Users\MonoCinema.Users.Domain\MonoCinema.Users.Domain.csproj", "{891AAB93-E60A-4AFA-897D-20A05C0FBCB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoCinema.Users.Infrastructure.EF.Postgres", "src\Modules\Users\MonoCinema.Users.Infrastructure.EF.Postgres\MonoCinema.Users.Infrastructure.EF.Postgres.csproj", "{8C9B414F-A5D9-4D59-897F-AD3A3CD77034}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoCinema.Users.Infrastructure.EF.MsSql", "src\Modules\Users\MonoCinema.Users.Infrastructure.EF.MsSql\MonoCinema.Users.Infrastructure.EF.MsSql.csproj", "{DA87575B-A0FB-4AA6-BFD8-C9AF09769B2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +79,30 @@ Global
 		{B1BF7E69-A0ED-40E3-AF85-856D5B1ADEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1BF7E69-A0ED-40E3-AF85-856D5B1ADEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1BF7E69-A0ED-40E3-AF85-856D5B1ADEF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD6A14AE-E470-4028-8FB4-63D24DF80797}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD6A14AE-E470-4028-8FB4-63D24DF80797}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD6A14AE-E470-4028-8FB4-63D24DF80797}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD6A14AE-E470-4028-8FB4-63D24DF80797}.Release|Any CPU.Build.0 = Release|Any CPU
+		{928C4580-C389-41EB-9DB0-7946EE54CF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{928C4580-C389-41EB-9DB0-7946EE54CF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{928C4580-C389-41EB-9DB0-7946EE54CF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{928C4580-C389-41EB-9DB0-7946EE54CF0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C21664-DE57-4E48-A9B9-76B34DF97F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C21664-DE57-4E48-A9B9-76B34DF97F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C21664-DE57-4E48-A9B9-76B34DF97F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C21664-DE57-4E48-A9B9-76B34DF97F11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{891AAB93-E60A-4AFA-897D-20A05C0FBCB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{891AAB93-E60A-4AFA-897D-20A05C0FBCB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{891AAB93-E60A-4AFA-897D-20A05C0FBCB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{891AAB93-E60A-4AFA-897D-20A05C0FBCB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C9B414F-A5D9-4D59-897F-AD3A3CD77034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9B414F-A5D9-4D59-897F-AD3A3CD77034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C9B414F-A5D9-4D59-897F-AD3A3CD77034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9B414F-A5D9-4D59-897F-AD3A3CD77034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA87575B-A0FB-4AA6-BFD8-C9AF09769B2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA87575B-A0FB-4AA6-BFD8-C9AF09769B2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA87575B-A0FB-4AA6-BFD8-C9AF09769B2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA87575B-A0FB-4AA6-BFD8-C9AF09769B2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +119,13 @@ Global
 		{C404D4A7-CC01-4D82-8BFF-62B260D395A3} = {DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}
 		{E877B319-DEF1-4979-A741-FF9F4DA68B05} = {DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}
 		{B1BF7E69-A0ED-40E3-AF85-856D5B1ADEF3} = {DA6DE2C5-6590-4BB5-81D3-1CED63A44A11}
+		{0D61484B-8C16-470D-937B-3095F8B8AC96} = {66DAC64F-26C3-4367-9893-D0CC2CCB6E2D}
+		{AD6A14AE-E470-4028-8FB4-63D24DF80797} = {0D61484B-8C16-470D-937B-3095F8B8AC96}
+		{928C4580-C389-41EB-9DB0-7946EE54CF0B} = {0D61484B-8C16-470D-937B-3095F8B8AC96}
+		{78C21664-DE57-4E48-A9B9-76B34DF97F11} = {0D61484B-8C16-470D-937B-3095F8B8AC96}
+		{891AAB93-E60A-4AFA-897D-20A05C0FBCB0} = {0D61484B-8C16-470D-937B-3095F8B8AC96}
+		{8C9B414F-A5D9-4D59-897F-AD3A3CD77034} = {0D61484B-8C16-470D-937B-3095F8B8AC96}
+		{DA87575B-A0FB-4AA6-BFD8-C9AF09769B2C} = {0D61484B-8C16-470D-937B-3095F8B8AC96}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56107632-50BB-4B99-AD45-0C93880460B4}
